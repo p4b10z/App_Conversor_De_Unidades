@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_geral"
+    android:padding="16dp">
+
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textViewExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Conversor De Unidades"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:textColor="#010E2A"
+        android:textSize="20sp"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Medida Original"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded"
+        android:hint="Digite o valor"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="#010E2A"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="353dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded"
+        android:padding="12dp"
+        android:popupBackground="@drawable/popup_background"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medida Final"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded"
+        android:padding="12dp"
+        android:popupBackground="@drawable/popup_background"
+        android:textColor="#010E2A"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#010E2A"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="converter"
+        android:padding="12dp"
+        android:text="Converter"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="Resultado"
+        android:textColor="@color/primaryButtonColor"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
